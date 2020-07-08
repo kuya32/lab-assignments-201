@@ -10,73 +10,79 @@ if(bornCity === 'y' || bornCity === 'yes') {
   alert('Incorrect, the city resides...TO THE NORTH!');
   // console.log('Was Marchael born in Seattle? ' + bornCity + 'is incorrect');
 } else if(bornCity === 'n' || bornCity === 'no') {
-  alert('Nope...try again.');
+  alert('Correct! Lets see if you can get all the questions right.');
   // console.log('Was Marchael born in Seattle? ' + bornCity + ' is correct');
 } else {
   alert('Please enter yes or no');
 }
 
-/*var finishCollege = prompt('Did Marchael finish college? yes or no?').toLowerCase();
-if(doDance === 'y' || doDance === 'yes') {
-  alert('I sure do! I swing, blues and fusion dance!');
-  // console.log('Does Tif social dance? ' + doDance + ' is correct');
-} else if(doDance === 'n' || doDance === 'no') {
-  alert('Incorrect - It may not seem like it on Zoom but I got mooooves!');
-  // console.log('Does Tif social dance? ' + doDance + ' is incorrect');
+var finishCollege = prompt('Did Marchael finish college? yes or no?').toLowerCase();
+if(finishCollege === 'y' || finishCollege === 'yes') {
+  alert('Correct! Proud alumni of UW! Go Dawgs!');
+  // console.log('Did Marchael finish college? ' + finishCollege + ' is correct');
+} else if(finishCollege === 'n' || finishCollege === 'no') {
+  alert('Incorrect, but sometimes college is not right for everyone.');
+  // console.log('Did Marchael finish college? ' + finishCollege + ' is incorrect');
 } else {
   alert('Please enter yes or no');
 }
 
-/*var philoDegree = prompt('Does Tif have a degree in Philosophy? (yes or no)').toLowerCase();
-if(philoDegree === 'y' || philoDegree === 'yes') {
-  alert('Yeah...I am in a constant state of existentialism, LOL');
-  // console.log('Does Tif have a degree in Philosophy? ' + philoDegree + ' is correct');
-} else if(philoDegree === 'n' || philoDegree === 'no') {
-  alert('Sadly, you\'re wrong. I majored in Philosophy of the Mind');
-  // console.log('Does Tif have a degree in Philosophy? ' + philoDegree + ' is incorrect');
+var jobAnswer = prompt('Did Marchael work at Din Tai Fung? yes or no?').toLowerCase();
+if(jobAnswer === 'y' || jobAnswer === 'yes') {
+  alert('Yuuuuuuuuup, serve for four plus years and ate over a thousand dumplings.');
+  // console.log('Did Marchael work at Din Tai Fung? ' + jobAnswer + ' is correct');
+} else if(jobAnswer === 'n' || jobAnswer === 'no') {
+  alert('Noooooooooope, I only worked there for the free dumplings.');
+  // console.log('Did Marchael work at Din Tai Fung? ' + jobAnswer + ' is incorrect');
 } else {
   alert('Please enter yes or no');
 }
 
-var ownCat = prompt('Does Tif own a cat? (yes or no)').toLowerCase();
-if(ownCat === 'y' || ownCat === 'yes') {
-  alert('Heck no fren! Doggos only plz.');
-  // console.log('Does Tif own a cat? ' + ownCat + ' is incorrect');
-} else if(ownCat === 'n' || ownCat === 'no') {
-  alert('Doin me an excite friendo! Cats are lame');
-  // console.log('Does Tif own a cat? ' + ownCat + ' is correct');
+var corgiAnswer = prompt('Does Marchael LOVE corgies? yes or no?)').toLowerCase();
+if(corgiAnswer === 'y' || corgiAnswer === 'yes') {
+  alert('HELL YES I DO! THEY ARE LITTLE LOAFS OF JOY!');
+  // console.log('Does Marchael LOVE corgies? ' + corgiAnswer + ' is correct');
+} else if(corgiAnswer === 'n' || corgiAnswer === 'no') {
+  alert('Do you even know me? Automatic GAME OVER');
+  // console.log('Does Marchael LOVE corgies? ' + corgiAnswer + ' is incorrect');
 } else {
   alert('Please enter yes or no');
 }
 
-var publishBook = prompt('Does Tif want to write and publish a book? (yes or no)').toLowerCase();
-if(publishBook === 'y' || publishBook === 'yes') {
-  alert('Correct! I do, but it\'s time consuming!');
-  // console.log('Does Tif want to write and publish a book? ' + publishBook + ' is correct');
-} else if(publishBook === 'n' || publishBook === 'no') {
-  alert('Incorrect, my friend. I aspire to be remembered forever!');
-  // console.log('Does Tif want to write and publish a book? ' + publishBook + ' is incorrect');
-} else {
-  alert('Please enter yes or no');
-}
+//Switching up from if...else statements to a switch statement for my last question.
+var numberGoalAnswer = prompt('How many future goals that Marchael have? Ill give you a hint, its between one and six.');
 
-alert('Thanks for taking the time to try and get to know me, ' + userName + ':)');
-
-
-var gingerAgeAnswer = prompt('How old is she?');
-
-switch(gingerAgeAnswer){
-case 'two':
-  alert('yeppers!');
+switch(numberGoalAnswer){
+case 'six':
+  alert('That is right, I am shooting for the stars!');
   break;
+  // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' correct');
 case 'zero':
-  alert('shes definitely older');
+  alert('Come on, I have little more ambitions than that!');
   break;
+  // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
 case 'one':
-  alert('almost there');
+  alert('More than that!');
   break;
+  // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
+case 'two':
+  alert('Keep going up!');
+  break;
+  // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
 case 'three':
-  alert('almost there');
+  alert('Try multiplying by two!');
   break;
+  // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
+case 'four':
+  alert('Add two more goals!');
+  break;
+  // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
+case 'five':
+  alert('Soooooo close!');
+  break;
+  // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
 default:
-  alert('not even in the ballpark');
+  alert('Not even close!');
+}
+
+alert('Well ' + userName + ' that was fun. Aight, Imma head out, but thanks for entertaining me and hope you have a great day!');
