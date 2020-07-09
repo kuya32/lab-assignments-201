@@ -66,17 +66,22 @@ function jobQuestion() {
   }
 }
 jobQuestion();
-// var corgiAnswer = prompt('Does Marchael LOVE corgies? yes or no?)').toLowerCase();
-// if(corgiAnswer === 'y' || corgiAnswer === 'yes') {
-//   alert('HELL YES I DO! THEY ARE LITTLE LOAFS OF JOY!');
-//   totalPoints++;
-//   // console.log('Does Marchael LOVE corgies? ' + corgiAnswer + ' is correct');
-// } else if(corgiAnswer === 'n' || corgiAnswer === 'no') {
-//   alert('Do you even know me? Automatic GAME OVER');
-//   // console.log('Does Marchael LOVE corgies? ' + corgiAnswer + ' is incorrect');
-// } else {
-//   alert('Please enter yes or no');
-// }
+
+function corgiQuestion() {
+  console.log('corgi');
+  var corgiAnswer = prompt('Does Marchael LOVE corgies? yes or no?)').toLowerCase();
+  if(corgiAnswer === 'y' || corgiAnswer === 'yes') {
+    alert('HELL YES I DO! THEY ARE LITTLE LOAFS OF JOY!');
+    totalPoints++;
+    // console.log('Does Marchael LOVE corgies? ' + corgiAnswer + ' is correct');
+  } else if(corgiAnswer === 'n' || corgiAnswer === 'no') {
+    alert('Do you even know me? Automatic GAME OVER');
+    // console.log('Does Marchael LOVE corgies? ' + corgiAnswer + ' is incorrect');
+  } else {
+    alert('Please enter yes or no');
+  }
+}
+corgiQuestion();
 
 // //Switching up from if...else statements to a switch statement for my last question.
 // var numberGoalAnswer = prompt('How many future goals does Marchael have? Ill give you a hint, its between one and six.');
