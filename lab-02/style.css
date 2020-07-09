@@ -10,7 +10,7 @@ h1 {
   margin: 35px;
 }
 
-h2 {
+h2, h3 {
   color: rgb(194, 144, 19);
   font-size: 50px;
   text-decoration: underline;
@@ -30,10 +30,20 @@ ol {
   list-style-type: decimal;
 }
 
+#school {
+  color:rgb(159, 10, 194);
+  font-size: 25px;
+  margin: 0px 30px 10px 45px;
+  list-style: disc;
+}
+
 #me {
   color: rgb(122,194,19);
 }
 
-#job {
+.job {
   color: rgb(93, 124, 236);
+  font-size: 25px;
+  margin: 0px 30px 10px 45px;
+  list-style: disc;
 }

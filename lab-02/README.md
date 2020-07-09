@@ -14,8 +14,10 @@ The assignment is utilizing coding tools we learned to comprise a guessing game 
 
 ### Contributions 
 - Tif Taylor helped me out with some parts of my Javascript code.
+- Merry Cimakasky helped me out with a 'arrayVariable'.includes('prompt variable') method to check items within an array. 
 
 ### Links and Resources:
 - Used [Adobe Color Wheel](https://color.adobe.com/create/color-wheel) to find a nice contrast between background color and font colors. This helps with reading the content easier. 
 - Used [CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp) to review over the diagram. 
 - Used [Stack Overflow](https://stackoverflow.com/questions/2642067/ordered-list-ol-showing-up-un-numbered) to troubleshoot why my number bullets were not showing up. 
+- Used [.parseInt](https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript/) to change my strings into integers. 

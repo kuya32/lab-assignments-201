@@ -4,6 +4,8 @@
 var userName = prompt('Mihowdy! What is your name?');
 alert('Welcome ' + userName + '! I am gonna ask you a series of questions about Marchael Acode. Please use \'yes\' or \'no\' when answering.');
 
+var totalPoints = 0;
+
 // Five yes or no question series
 var bornCity = prompt('Was Marchael born in Seattle? yes or no?').toLowerCase();
 if(bornCity === 'y' || bornCity === 'yes') {
@@ -11,6 +13,7 @@ if(bornCity === 'y' || bornCity === 'yes') {
   // console.log('Was Marchael born in Seattle? ' + bornCity + 'is incorrect');
 } else if(bornCity === 'n' || bornCity === 'no') {
   alert('Correct! Lets see if you can get all the questions right.');
+  totalPoints++;
   // console.log('Was Marchael born in Seattle? ' + bornCity + ' is correct');
 } else {
   alert('Please enter yes or no');
@@ -19,6 +22,7 @@ if(bornCity === 'y' || bornCity === 'yes') {
 var finishCollege = prompt('Did Marchael finish college? yes or no?').toLowerCase();
 if(finishCollege === 'y' || finishCollege === 'yes') {
   alert('Correct! Proud alumni of UW! Go Dawgs!');
+  totalPoints++;
   // console.log('Did Marchael finish college? ' + finishCollege + ' is correct');
 } else if(finishCollege === 'n' || finishCollege === 'no') {
   alert('Incorrect, but sometimes college is not right for everyone.');
@@ -29,7 +33,8 @@ if(finishCollege === 'y' || finishCollege === 'yes') {
 
 var jobAnswer = prompt('Did Marchael work at Din Tai Fung? yes or no?').toLowerCase();
 if(jobAnswer === 'y' || jobAnswer === 'yes') {
-  alert('Yuuuuuuuuup, serve for four plus years and ate over a thousand dumplings.');
+  alert('Yuuuuuuuuup, served for four plus years and ate over a thousand dumplings.');
+  totalPoints++;
   // console.log('Did Marchael work at Din Tai Fung? ' + jobAnswer + ' is correct');
 } else if(jobAnswer === 'n' || jobAnswer === 'no') {
   alert('Noooooooooope, I only worked there for the free dumplings.');
@@ -41,6 +46,7 @@ if(jobAnswer === 'y' || jobAnswer === 'yes') {
 var corgiAnswer = prompt('Does Marchael LOVE corgies? yes or no?)').toLowerCase();
 if(corgiAnswer === 'y' || corgiAnswer === 'yes') {
   alert('HELL YES I DO! THEY ARE LITTLE LOAFS OF JOY!');
+  totalPoints++;
   // console.log('Does Marchael LOVE corgies? ' + corgiAnswer + ' is correct');
 } else if(corgiAnswer === 'n' || corgiAnswer === 'no') {
   alert('Do you even know me? Automatic GAME OVER');
@@ -50,11 +56,12 @@ if(corgiAnswer === 'y' || corgiAnswer === 'yes') {
 }
 
 //Switching up from if...else statements to a switch statement for my last question.
-var numberGoalAnswer = prompt('How many future goals that Marchael have? Ill give you a hint, its between one and six.');
+var numberGoalAnswer = prompt('How many future goals does Marchael have? Ill give you a hint, its between one and six.');
 
 switch(numberGoalAnswer){
 case 'six':
   alert('That is right, I am shooting for the stars!');
+  totalPoints++;
   break;
   // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' correct');
 case 'zero':
@@ -83,6 +90,66 @@ case 'five':
   // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
 default:
   alert('Not even close!');
+  break;
+}
+//Question 6
+var ageArray = ['21', '22', '23', '24', '25', '26', '27']
+
+for (var i = 0; i < 6; i++){
+  var ageAnswer = prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
+  if (ageAnswer === ageArray[5]) {
+    alert('Wow, good guess!');
+    totalPoints++;
+    break;
+  } else if (ageAnswer === ageArray[0] || ageAnswer === ageArray[1] || ageAnswer === ageArray[2] || ageAnswer === ageArray[3] || ageAnswer === ageArray[4]) {
+    alert('Nope, too low. Try again')
+    //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
+  } else {
+    alert('Nope, too high. Try again')
+    //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
+  }
 }
 
-alert('Well ' + userName + ' that was fun. Aight, Imma head out, but thanks for entertaining me and hope you have a great day!');
+/*
+//I want to keep this code for future reference of parseInt();
+var ageArray = [21, 22, 23, 24, 25, 26, 27]
+
+for (var i = 0; i < 6; i++){
+  var ageAnswer = prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)')
+  var integer = parseInt(ageAnswer)
+  if (integer === ageArray[5]) {
+    alert('Wow, good guess!');
+    break;
+  } else if (integer === ageArray[0] || integer=== ageArray[1] || integer === ageArray[2] || integer === ageArray[3] || integer === ageArray[4]) {
+    alert('Nope, too low. Try again')
+    //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
+  } else {
+    alert('Nope, too high. Try again')
+    //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
+  }
+}
+*/
+
+
+//Question 7
+var favAnimeList = ['hunter x hunter', 'my hero academia', 'one piece']
+
+var notTopThree = ['haikyu', 'demon slayer', 'sword art online']
+
+for (var i = 0; i < 6; i++) {
+  var favAnime = prompt ('What is one of Marchaels top three favorite animes? Here is the list: Hunter x Hunter, My Hero Academia, One Piece, Haikyu, Demon Slayer or Sword Art Online').toLowerCase();
+  if (favAnime === favAnimeList[0] || favAnime === favAnimeList[1] || favAnime === favAnimeList[2]) {
+    alert('Yup, ' + favAnime + ' is a dope anime!');
+    totalPoints++;
+    console.log(totalPoints);
+    break;
+    // I could have used the same method as favAnimeList array, but another method introduced in line 137: 'arrayVariable'.includes('prompt variable')
+  } else if (notTopThree.includes(favAnime)) {
+    alert('Nope, ' + favAnime + ' is not one of my favorites, but still a great anime.');
+  } else {
+    alert('I made it easy for you and gave you a list of animes to choose from.');
+  }
+}
+
+//Final sign-off alert to user
+alert('Well ' + userName + ' that was fun. Your total score was ' + totalPoints + '/7. Aight, Imma head out, but thanks for entertaining me and hope you have a great day!');
