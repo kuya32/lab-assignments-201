@@ -95,17 +95,17 @@ default:
 //Question 6
 var ageArray = ['21', '22', '23', '24', '25', '26', '27']
 
-for (var i = 0; i < 6; i++){
+for (var i = 0; i < 4; i++){
   var ageAnswer = prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
   if (ageAnswer === ageArray[5]) {
     alert('Wow, good guess!');
     totalPoints++;
     break;
   } else if (ageAnswer === ageArray[0] || ageAnswer === ageArray[1] || ageAnswer === ageArray[2] || ageAnswer === ageArray[3] || ageAnswer === ageArray[4]) {
-    alert('Nope, too low. Try again')
+    alert('Nope, too low. Try again');
     //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
   } else {
-    alert('Nope, too high. Try again')
+    alert('Nope, too high. Try again');
     //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
   }
 }
@@ -141,7 +141,6 @@ for (var i = 0; i < 6; i++) {
   if (favAnime === favAnimeList[0] || favAnime === favAnimeList[1] || favAnime === favAnimeList[2]) {
     alert('Yup, ' + favAnime + ' is a dope anime!');
     totalPoints++;
-    console.log(totalPoints);
     break;
   } else if (favAnime === notTopThree[0] || favAnime === notTopThree[1] || favAnime === notTopThree[2]) {
     alert('Nope, ' + favAnime + ' is not one of my favorites, but still a great anime.');
