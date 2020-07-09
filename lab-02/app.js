@@ -36,7 +36,7 @@ function bornQuestion() {
 bornQuestion();
 
 function collegeQuestion() {
-  console.log('UW');
+  // console.log('UW');
   var finishCollege = prompt('Did Marchael finish college? yes or no?').toLowerCase();
   if(finishCollege === 'y' || finishCollege === 'yes') {
     alert('Correct! Proud alumni of UW! Go Dawgs!');
@@ -52,7 +52,7 @@ function collegeQuestion() {
 collegeQuestion();
 
 function jobQuestion() {
-  console.log('din tai fung');
+  // console.log('din tai fung');
   var jobAnswer = prompt('Did Marchael work at Din Tai Fung? yes or no?').toLowerCase();
   if(jobAnswer === 'y' || jobAnswer === 'yes') {
     alert('Yuuuuuuuuup, served for four plus years and ate over a thousand dumplings.');
@@ -68,7 +68,7 @@ function jobQuestion() {
 jobQuestion();
 
 function corgiQuestion() {
-  console.log('corgi');
+  // console.log('corgi');
   var corgiAnswer = prompt('Does Marchael LOVE corgies? yes or no?)').toLowerCase();
   if(corgiAnswer === 'y' || corgiAnswer === 'yes') {
     alert('HELL YES I DO! THEY ARE LITTLE LOAFS OF JOY!');
@@ -86,7 +86,7 @@ corgiQuestion();
 // //Switching up from if...else statements to a switch statement for my last question.
 
 function goalQuestion() {
-  console.log('DREAMS');
+  // console.log('DREAMS');
   var numberGoalAnswer = prompt('How many future goals does Marchael have? Ill give you a hint, its between one and six.');
 
   switch(numberGoalAnswer){
@@ -129,7 +129,7 @@ goalQuestion();
 //Question 6
 
 function ageQuestion() {
-  console.log('I\'m old!');
+  // console.log('I\'m old!');
   var ageArray = ['21', '22', '23', '24', '25', '26', '27']
 
   for (var i = 0; i < 4; i++){
@@ -169,32 +169,37 @@ for (var i = 0; i < 6; i++){
 }
 */
 
+//Question 7
 
-// //Question 7
-// var favAnimeList = ['hunter x hunter', 'my hero academia', 'one piece']
+function animeQuestion() {
+  // console.log('weeb');
+  var favAnimeList = ['hunter x hunter', 'my hero academia', 'one piece'];
 
-// var notTopThree = ['haikyu', 'demon slayer', 'sword art online']
+  var notTopThree = ['haikyu', 'demon slayer', 'sword art online'];
 
-// for (var i = 0; i < 6; i++) {
-//   var favAnime = prompt ('What is one of Marchaels top three favorite animes? Here is the list: Hunter x Hunter, My Hero Academia, One Piece, Haikyu, Demon Slayer or Sword Art Online').toLowerCase();
-//   if (favAnime === favAnimeList[0] || favAnime === favAnimeList[1] || favAnime === favAnimeList[2]) {
-//     alert('Yup, ' + favAnime + ' is a dope anime!');
-//     totalPoints++;
-//     break;
-//   } else if (favAnime === notTopThree[0] || favAnime === notTopThree[1] || favAnime === notTopThree[2]) {
-//     alert('Nope, ' + favAnime + ' is not one of my favorites, but still a great anime.');
-//   } else {
-//     alert('I made it easy for you and gave you a list of animes to choose from.');
-//   }
-// }
-//   /*
-//   I could have used the same method as favAnimeList array, but another method introduced in line 137: 'arrayVariable'.includes('prompt variable')
-//   } else if (notTopThree.includes(favAnime)) {
-//     alert('Nope, ' + favAnime + ' is not one of my favorites, but still a great anime.');
-//   } else {
-//     alert('I made it easy for you and gave you a list of animes to choose from.');
-//   }
-//   */
+  for (var i = 0; i < 6; i++) {
+    var favAnime = prompt ('What is one of Marchaels top three favorite animes? Here is the list: Hunter x Hunter, My Hero Academia, One Piece, Haikyu, Demon Slayer or Sword Art Online').toLowerCase();
+    if (favAnime === favAnimeList[0] || favAnime === favAnimeList[1] || favAnime === favAnimeList[2]) {
+      alert('Yup, ' + favAnime + ' is a dope anime!');
+      totalPoints++;
+      break;
+    } else if (favAnime === notTopThree[0] || favAnime === notTopThree[1] || favAnime === notTopThree[2]) {
+      alert('Nope, ' + favAnime + ' is not one of my favorites, but still a great anime.');
+    } else {
+      alert('I made it easy for you and gave you a list of animes to choose from.');
+    }
+  }
+}
+animeQuestion();
 
-// //Final sign-off alert to user
-// alert('Well ' + userName + ' that was fun. Your total score was ' + totalPoints + '/7. Aight, Imma head out, but thanks for entertaining me and hope you have a great day!');
+/*
+  I could have used the same method as favAnimeList array, but another method introduced in line 137: 'arrayVariable'.includes('prompt variable')
+  } else if (notTopThree.includes(favAnime)) {
+    alert('Nope, ' + favAnime + ' is not one of my favorites, but still a great anime.');
+  } else {
+    alert('I made it easy for you and gave you a list of animes to choose from.');
+  }
+*/
+
+//Final sign-off alert to user
+alert('Well ' + userName + ' that was fun. Your total score was ' + totalPoints + '/7. Aight, Imma head out, but thanks for entertaining me and hope you have a great day!');
