@@ -84,42 +84,49 @@ function corgiQuestion() {
 corgiQuestion();
 
 // //Switching up from if...else statements to a switch statement for my last question.
-// var numberGoalAnswer = prompt('How many future goals does Marchael have? Ill give you a hint, its between one and six.');
 
-// switch(numberGoalAnswer){
-// case 'six':
-//   alert('That is right, I am shooting for the stars!');
-//   totalPoints++;
-//   break;
-//   // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' correct');
-// case 'zero':
-//   alert('Come on, I have little more ambitions than that!');
-//   break;
-//   // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
-// case 'one':
-//   alert('More than that!');
-//   break;
-//   // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
-// case 'two':
-//   alert('Keep going up!');
-//   break;
-//   // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
-// case 'three':
-//   alert('Try multiplying by two!');
-//   break;
-//   // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
-// case 'four':
-//   alert('Add two more goals!');
-//   break;
-//   // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
-// case 'five':
-//   alert('Soooooo close!');
-//   break;
-//   // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
-// default:
-//   alert('Not even close!');
-//   break;
-// }
+function goalQuestion() {
+  console.log('DREAMS');
+  var numberGoalAnswer = prompt('How many future goals does Marchael have? Ill give you a hint, its between one and six.');
+
+  switch(numberGoalAnswer){
+  case 'six':
+    alert('That is right, I am shooting for the stars!');
+    totalPoints++;
+    break;
+    // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' correct');
+  case 'zero':
+    alert('Come on, I have little more ambitions than that!');
+    break;
+    // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
+  case 'one':
+    alert('More than that!');
+    break;
+    // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
+  case 'two':
+    alert('Keep going up!');
+    break;
+    // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
+  case 'three':
+    alert('Try multiplying by two!');
+    break;
+    // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
+  case 'four':
+    alert('Add two more goals!');
+    break;
+    // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
+  case 'five':
+    alert('Soooooo close!');
+    break;
+    // console.log('How many future goals that Marchael have? ' + umberGoalAnswer + ' is incorrect');
+  default:
+    alert('Not even close!');
+    break;
+  }
+}
+goalQuestion();
+
+
 // //Question 6
 // var ageArray = ['21', '22', '23', '24', '25', '26', '27']
 
