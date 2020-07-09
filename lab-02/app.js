@@ -20,34 +20,36 @@ var totalPoints = 0;
 
 // Five yes or no question series
 function bornQuestion() {
-  console.log('new westminister');
-}
-var bornCity = prompt('Was Marchael born in Seattle? yes or no?').toLowerCase();
-if(bornCity === 'y' || bornCity === 'yes') {
-  alert('Incorrect, the city resides...TO THE NORTH!');
-  // console.log('Was Marchael born in Seattle? ' + bornCity + 'is incorrect');
-} else if(bornCity === 'n' || bornCity === 'no') {
-  alert('Correct! Lets see if you can get all the questions right.');
-  totalPoints++;
-  // console.log('Was Marchael born in Seattle? ' + bornCity + ' is correct');
-} else {
-  alert('Please enter yes or no');
+  // console.log('new westminister');
+  var bornCity = prompt('Was Marchael born in Seattle? yes or no?').toLowerCase();
+  if(bornCity === 'y' || bornCity === 'yes') {
+    alert('Incorrect, the city resides...TO THE NORTH!');
+    // console.log('Was Marchael born in Seattle? ' + bornCity + 'is incorrect');
+  } else if(bornCity === 'n' || bornCity === 'no') {
+    alert('Correct! Lets see if you can get all the questions right.');
+    totalPoints++;
+    // console.log('Was Marchael born in Seattle? ' + bornCity + ' is correct');
+  } else {
+    alert('Please enter yes or no');
+  }
 }
 bornQuestion();
 
-
-
-// var finishCollege = prompt('Did Marchael finish college? yes or no?').toLowerCase();
-// if(finishCollege === 'y' || finishCollege === 'yes') {
-//   alert('Correct! Proud alumni of UW! Go Dawgs!');
-//   totalPoints++;
-//   // console.log('Did Marchael finish college? ' + finishCollege + ' is correct');
-// } else if(finishCollege === 'n' || finishCollege === 'no') {
-//   alert('Incorrect, but sometimes college is not right for everyone.');
-//   // console.log('Did Marchael finish college? ' + finishCollege + ' is incorrect');
-// } else {
-//   alert('Please enter yes or no');
-// }
+function collegeQuestion() {
+  console.log('UW');
+  var finishCollege = prompt('Did Marchael finish college? yes or no?').toLowerCase();
+  if(finishCollege === 'y' || finishCollege === 'yes') {
+    alert('Correct! Proud alumni of UW! Go Dawgs!');
+    totalPoints++;
+    // console.log('Did Marchael finish college? ' + finishCollege + ' is correct');
+  } else if(finishCollege === 'n' || finishCollege === 'no') {
+    alert('Incorrect, but sometimes college is not right for everyone.');
+    // console.log('Did Marchael finish college? ' + finishCollege + ' is incorrect');
+  } else {
+    alert('Please enter yes or no');
+  }
+}
+collegeQuestion();
 
 // var jobAnswer = prompt('Did Marchael work at Din Tai Fung? yes or no?').toLowerCase();
 // if(jobAnswer === 'y' || jobAnswer === 'yes') {
