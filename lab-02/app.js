@@ -51,18 +51,21 @@ function collegeQuestion() {
 }
 collegeQuestion();
 
-// var jobAnswer = prompt('Did Marchael work at Din Tai Fung? yes or no?').toLowerCase();
-// if(jobAnswer === 'y' || jobAnswer === 'yes') {
-//   alert('Yuuuuuuuuup, served for four plus years and ate over a thousand dumplings.');
-//   totalPoints++;
-//   // console.log('Did Marchael work at Din Tai Fung? ' + jobAnswer + ' is correct');
-// } else if(jobAnswer === 'n' || jobAnswer === 'no') {
-//   alert('Noooooooooope, I only worked there for the free dumplings.');
-//   // console.log('Did Marchael work at Din Tai Fung? ' + jobAnswer + ' is incorrect');
-// } else {
-//   alert('Please enter yes or no');
-// }
-
+function jobQuestion() {
+  console.log('din tai fung');
+  var jobAnswer = prompt('Did Marchael work at Din Tai Fung? yes or no?').toLowerCase();
+  if(jobAnswer === 'y' || jobAnswer === 'yes') {
+    alert('Yuuuuuuuuup, served for four plus years and ate over a thousand dumplings.');
+    totalPoints++;
+    // console.log('Did Marchael work at Din Tai Fung? ' + jobAnswer + ' is correct');
+  } else if(jobAnswer === 'n' || jobAnswer === 'no') {
+    alert('Noooooooooope, I only worked there for the free dumplings.');
+    // console.log('Did Marchael work at Din Tai Fung? ' + jobAnswer + ' is incorrect');
+  } else {
+    alert('Please enter yes or no');
+  }
+}
+jobQuestion();
 // var corgiAnswer = prompt('Does Marchael LOVE corgies? yes or no?)').toLowerCase();
 // if(corgiAnswer === 'y' || corgiAnswer === 'yes') {
 //   alert('HELL YES I DO! THEY ARE LITTLE LOAFS OF JOY!');
