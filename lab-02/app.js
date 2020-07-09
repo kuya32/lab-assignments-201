@@ -143,13 +143,20 @@ for (var i = 0; i < 6; i++) {
     totalPoints++;
     console.log(totalPoints);
     break;
-    // I could have used the same method as favAnimeList array, but another method introduced in line 137: 'arrayVariable'.includes('prompt variable')
-  } else if (notTopThree.includes(favAnime)) {
+  } else if (favAnime === notTopThree[0] || favAnime === notTopThree[1] || favAnime === notTopThree[2]) {
     alert('Nope, ' + favAnime + ' is not one of my favorites, but still a great anime.');
   } else {
     alert('I made it easy for you and gave you a list of animes to choose from.');
   }
 }
+  /*
+  I could have used the same method as favAnimeList array, but another method introduced in line 137: 'arrayVariable'.includes('prompt variable')
+  } else if (notTopThree.includes(favAnime)) {
+    alert('Nope, ' + favAnime + ' is not one of my favorites, but still a great anime.');
+  } else {
+    alert('I made it easy for you and gave you a list of animes to choose from.');
+  }
+  */
 
 //Final sign-off alert to user
 alert('Well ' + userName + ' that was fun. Your total score was ' + totalPoints + '/7. Aight, Imma head out, but thanks for entertaining me and hope you have a great day!');
