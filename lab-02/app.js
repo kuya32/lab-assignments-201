@@ -126,44 +126,48 @@ function goalQuestion() {
 }
 goalQuestion();
 
+//Question 6
 
-// //Question 6
-// var ageArray = ['21', '22', '23', '24', '25', '26', '27']
+function ageQuestion() {
+  console.log('I\'m old!');
+  var ageArray = ['21', '22', '23', '24', '25', '26', '27']
 
-// for (var i = 0; i < 4; i++){
-//   var ageAnswer = prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
-//   if (ageAnswer === ageArray[5]) {
-//     alert('Wow, good guess!');
-//     totalPoints++;
-//     break;
-//   } else if (ageAnswer === ageArray[0] || ageAnswer === ageArray[1] || ageAnswer === ageArray[2] || ageAnswer === ageArray[3] || ageAnswer === ageArray[4]) {
-//     alert('Nope, too low. Try again');
-//     //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
-//   } else {
-//     alert('Nope, too high. Try again');
-//     //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
-//   }
-// }
+  for (var i = 0; i < 4; i++){
+    var ageAnswer = prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
+    if (ageAnswer === ageArray[5]) {
+      alert('Wow, good guess!');
+      totalPoints++;
+      break;
+    } else if (ageAnswer === ageArray[0] || ageAnswer === ageArray[1] || ageAnswer === ageArray[2] || ageAnswer === ageArray[3] || ageAnswer === ageArray[4]) {
+      alert('Nope, too low. Try again');
+      //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
+    } else {
+      alert('Nope, too high. Try again');
+      //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
+    }
+  }
+}
+ageQuestion();
 
-// /*
-// //I want to keep this code for future reference of parseInt();
-// var ageArray = [21, 22, 23, 24, 25, 26, 27]
+/*
+//I want to keep this code for future reference of parseInt();
+var ageArray = [21, 22, 23, 24, 25, 26, 27]
 
-// for (var i = 0; i < 6; i++){
-//   var ageAnswer = prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)')
-//   var integer = parseInt(ageAnswer)
-//   if (integer === ageArray[5]) {
-//     alert('Wow, good guess!');
-//     break;
-//   } else if (integer === ageArray[0] || integer=== ageArray[1] || integer === ageArray[2] || integer === ageArray[3] || integer === ageArray[4]) {
-//     alert('Nope, too low. Try again')
-//     //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
-//   } else {
-//     alert('Nope, too high. Try again')
-//     //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
-//   }
-// }
-// */
+for (var i = 0; i < 6; i++){
+  var ageAnswer = prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)')
+  var integer = parseInt(ageAnswer)
+  if (integer === ageArray[5]) {
+    alert('Wow, good guess!');
+    break;
+  } else if (integer === ageArray[0] || integer=== ageArray[1] || integer === ageArray[2] || integer === ageArray[3] || integer === ageArray[4]) {
+    alert('Nope, too low. Try again')
+    //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
+  } else {
+    alert('Nope, too high. Try again')
+    //prompt('How old is Marchael? I will give you a hint. His age is between 21 and 27.)').toLowerCase();
+  }
+}
+*/
 
 
 // //Question 7
