@@ -15,6 +15,7 @@ The assignment is utilizing coding tools we learned to comprise a guessing game 
 ### Contributions 
 - Tif Taylor helped me out with some parts of my Javascript code.
 - Merry Cimakasky helped me out with a 'arrayVariable'.includes('prompt variable') method to check items within an array. 
+- Riva Davidowski helped wrap functions around all seven questions of "Guessing Game" assignment during our pair programming lab.
 
 ### Links and Resources:
 - Used [Adobe Color Wheel](https://color.adobe.com/create/color-wheel) to find a nice contrast between background color and font colors. This helps with reading the content easier. 
