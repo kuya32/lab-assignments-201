@@ -22,3 +22,4 @@ The assignment is utilizing coding tools we learned to comprise a guessing game 
 - Used [CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp) to review over the diagram. 
 - Used [Stack Overflow](https://stackoverflow.com/questions/2642067/ordered-list-ol-showing-up-un-numbered) to troubleshoot why my number bullets were not showing up. 
 - Used [.parseInt](https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript/) to change my strings into integers. 
+- Used [Floats and Clears](https://www.freecodecamp.org/news/css-floats-explained-by-riding-an-escalator-57fa55232333/) to position my ```<div>``` into specific sides of my web page.
