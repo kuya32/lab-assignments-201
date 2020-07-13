@@ -1,49 +1,89 @@
 body {
-  background-color: rgb(67, 6, 70)
+  background-color: rgb(138, 43, 226)
 }
 
 h1 {
-  color: rgb(194, 144, 19);
-  font-size: 75px;
+  color: rgb(227, 194, 54);
+  font-size: 50px;
   text-align: center;
   text-decoration: underline;
   margin: 35px;
 }
 
 h2, h3 {
-  color: rgb(194, 144, 19);
+  color: rgb(227, 194, 54);
   font-size: 50px;
+  text-align: center;
   text-decoration: underline;
-  margin: 30px 0px 30px 20px;
+  margin: 35px;
 }
 
-p {
-  color:rgb(159, 10, 194);
-  font-size: 25px;
-  margin: 0px 30px 10px 20px;
-}
-
-ol {
-  color: rgb(194, 144, 19);
-  font-size: 25px;
-  margin: 0px 30px 10px 45px;
-  list-style-type: decimal;
-}
-
-#school {
-  color:rgb(159, 10, 194);
-  font-size: 25px;
-  margin: 0px 30px 10px 45px;
-  list-style: disc;
+#picMe {
+  float: right;
+  margin: 50px 140px 50px 0px;
+  border: ridge 15px rgb(179, 150, 48);
 }
 
 #me {
-  color: rgb(122,194,19);
+  color: rgb(227, 194, 54);
+  width: 50%;
+  float: left;
+  margin: 75px 0px 0px 50px;
+  font-size: 28px;
+
 }
 
-.job {
-  color: rgb(93, 124, 236);
+#logo {
+  float: left;
+  margin: 265px 100px 200px 140px;
+  border: ridge 15px rgb(179, 150, 48);
+}
+
+#school {
+  width: 40%;
+  margin: 0px 50px 50px 0px;
+  color: rgb(227, 194, 54);
   font-size: 25px;
-  margin: 0px 30px 10px 45px;
-  list-style: disc;
+  float: right; 
+}
+
+#logo2 {
+  margin: 150px 150px 0px 200px;
+  border: ridge 15px rgb(179, 150, 48);
+  float: right;
+}
+
+#jobs {
+  width: 40%;
+  margin: 100px 0px 50px 50px;
+  color: rgb(227, 194, 54);
+  font-size: 25px;
+  float: left;
+
+}
+
+#goals {
+  color: rgb(227, 194, 54);
+  font-size: 25px;
+  margin: 50px;
+  clear: both;
+}
+
+#anime {
+  color: rgb(227, 194, 54);
+  font-size: 25px;
+  margin: 50px;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+ul {
+  list-style-type: square;
+}
+
+#anime > ol {
+  text-align: center;
 }
